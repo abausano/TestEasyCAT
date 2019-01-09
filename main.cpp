@@ -12,6 +12,10 @@
 //******************************************************************************************** 
 
 
+// revision 2 - moved  "DigitalOut Led(LED1)"
+
+
+
 //----- EasyCAT shield application basic example for mbed boards 170912 ----------------------
 //----- Derived from the example project TestEasyCAT.ino for the AB&T EasyCAT Arduino shield
 
@@ -69,7 +73,7 @@ DigitalIn In_1(D5);              //
 DigitalIn In_2(D6);              // 
 DigitalIn In_3(D7);              //     
 
-DigitalOut Led(LED1);            //  
+
 
 
 
@@ -123,6 +127,8 @@ int main(void)
                                                         // The most common reason is that the SPI 
                                                         // chip select choosen on the board doesn't 
                                                         // match the one choosen by the firmware
+                                                             
+    DigitalOut Led(LED1);                               //                                                                   
                                                                   
     while (1)                                           // stay in loop for ever
     {                                                   // with the led blinking
